@@ -1,0 +1,73 @@
+{
+  "name": "ocanvas",
+  "version": "1.0.15",
+  "description": "Canvas for onemin",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "storybook:export": "build-storybook",
+    "comp": "node ./util/create-component",
+    "prepublishOnly": "npm run build",
+    "build-storybook": "storybook build"
+  },
+  "author": "Tareq Aziz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tareq0065/ocanvas.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tareq0065/ocanvas/issues"
+  },
+  "homepage": "https://github.com/tareq0065/onecanvas#readme",
+  "dependencies": {
+    "@babel/core": "^7.19.6",
+    "@daybrush/utils": "^1.10.0",
+    "@scenejs/effects": "^1.0.1",
+    "babel-loader": "^9.0.0",
+    "babel-preset-react-app": "^10.0.1",
+    "global": "^4.4.0",
+    "identity-obj-proxy": "^3.0.0",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "scenejs": "^1.6.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.18.10",
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@storybook/addon-actions": "^7.0.0-alpha.46",
+    "@storybook/addon-essentials": "^7.0.0-alpha.46",
+    "@storybook/addon-interactions": "^7.0.0-alpha.46",
+    "@storybook/addon-links": "^7.0.0-alpha.46",
+    "@storybook/addon-storysource": "^6.5.13",
+    "@storybook/addons": "^6.5.13",
+    "@storybook/react": "^7.0.0-alpha.46",
+    "@storybook/react-webpack5": "^7.0.0-alpha.46",
+    "@storybook/testing-library": "^0.0.14-next.0",
+    "colors": "^1.4.0",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.7.1",
+    "rollup": "^3.2.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "sass-loader": "^13.1.0",
+    "storybook": "^7.0.0-alpha.46"
+  }
+}

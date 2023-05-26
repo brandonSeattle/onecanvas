@@ -1,0 +1,17 @@
+module.exports = (componentName) => ({
+	content: `import React from "react";
+import ${componentName} from "./${componentName}";
+
+export default {
+	title: 'Canvas',
+};
+
+export const ${componentName}Story = () => {
+	return (
+		<${componentName} foo="bar" />
+	)
+};
+
+`,
+	extension: `.stories.js`,
+});
